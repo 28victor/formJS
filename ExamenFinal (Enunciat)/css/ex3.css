@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.25;
+}
+nav li{
+    display: inline-block;
+    padding: 0.75em;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+nav li > a{
+    text-decoration: none;
+}
+
+div{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    cursor: pointer;
+    margin:1em;
+    display: block;
+    padding: 1em;
+    background-color: cornflowerblue;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+button:first-child{
+    background-color: crimson;
+}
+
+/*Default Skin*/
+nav{border: solid 1px black;}
+nav li{background-color: white;}
+nav li:hover{background-color: cornsilk;}
+nav li > a{color: black;}
+
+/*Dark Skin*/
+nav.dark{border:solid 1px darkblue; background-color: darkblue;}
+nav.dark li{background-color: darkblue;}
+nav.dark li:hover{background-color: blue;}
+nav.dark li > a{color: white;}

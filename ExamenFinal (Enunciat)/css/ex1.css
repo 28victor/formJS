@@ -1,0 +1,31 @@
+/* CSS genèric */
+input{
+    display: block;
+    margin: 0.5em 0;
+}
+
+h1{text-align: center;}
+body{padding-top: 5em;}
+
+form{    
+    padding: 2em;
+    border: 2px solid indigo;
+    background-color: floralwhite;
+    margin:auto;
+    width:60vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+/* CSS per mostrar entrada correcta */
+.ok, .ok:focus{
+    outline: none !important;
+    border: 2px green solid!important;
+}
+
+/* CSS per mostrar entrada incorrecta */
+.bad, .bad:focus{
+    outline: none !important;
+    border: 2px red solid!important;
+}

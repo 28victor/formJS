@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="David González">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultori Astrològic Magnus</title>
+    <link rel="stylesheet" href="./css/ex1.css" type="text/css">
+    <script src="./js/ex1.js"></script>
+</head>
+<body>
+    <form>
+        <h1>Consultori Astrològic Magnus</h1>
+        <label for="iSigne">Signe Zodíac:</label>
+        <select name="signe" id="iSigne" required>
+            <option value="novalid">Escull el teu signe</option>
+            <option value="aries">Àries</option>
+            <option value="taure">Taure</option>
+            <option value="bessons">Bessons</option>
+            <option value="cancer">Càncer</option>
+            <option value="leo">Leo</option>
+            <option value="virgo">Virgo</option>
+            <option value="lliura">Lliura</option>
+            <option value="escorpio">Escorpió</option>
+            <option value="sagitari">Sagitari</option>
+            <option value="capricorn">Capricorn</option>
+            <option value="aquari">Aquari</option>
+            <option value="peixos">Peixos</option>
+        </select>
+        <label for="iCodiSoci">Codi Soci:</label>
+        <input id="iCodiSoci"  type="text" placeholder="Introdueix el teu Codi de Soci" required />
+        <label for="iFills">Número de Fills:</label>
+        <input id="iFills"  type="number" value="0" min="0" max="10" step="1" required/>
+        <label for="iConsulta">Consulta:</label>
+        <textarea name="consulta" id="iConsulta" cols="30" rows="10" required></textarea>
+        <input id="bConsulta" type="submit" disabled value="Fer Consulta" />
+    </form>
+</body>
+</html>

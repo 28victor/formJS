@@ -1,0 +1,44 @@
+/* CSS genèric */
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin: 1em;
+    background-color: rgba(255,255,255,0.25);
+    width: 300px;
+    color:black;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#terreny{
+    cursor: url("../img/target.png"), auto;	
+    background-image: url("../img/background.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.duck{
+    position: absolute;
+    top: 80vh;
+    left: 50vw;
+    animation: duckMove 2s ease-in-out alternate infinite;
+}
+
+@keyframes duckMove {
+    from {transform: matrix(1,0,0,1,-20,0)}
+    to {transform: matrix(1.25,0,0,1.25,20,0)}
+}
